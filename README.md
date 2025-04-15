@@ -1,6 +1,7 @@
 ## HALF_ADDER_SUBTRACTOR
 ## DEVELOPED BY: KEERTHANA D
 ## REG NO: 212224040155
+## DATE:
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
@@ -36,7 +37,9 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+
   ![Screenshot 2025-04-15 223541](https://github.com/user-attachments/assets/10a0529c-e517-4c8f-8116-711fc771ed6a)
+  
   ![Screenshot 2025-04-15 223750](https://github.com/user-attachments/assets/607cb65d-012e-414a-a96f-213d8873d274)
 
 
@@ -54,21 +57,34 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+
 i)HALF ADDER
+
  module exp3(a,b,sum,carry);
+ 
  input a,b;
+ 
  output sum,carry;
+ 
  assign sum= (a ^ b);
+ 
  assign carry= ( a & b);
+ 
  endmodule
 
 
 ii)HALF SUBTRACTOR
+
  module exp3(a,b,difference,borrow);
+ 
  input a,b;
+ 
  output difference,borrow;
+ 
  assign difference= (a ^ b);
+ 
  assign borrow= ( ~a & b);
+ 
  endmodule
 
 
